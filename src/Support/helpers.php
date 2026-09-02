@@ -90,7 +90,7 @@ if (! function_exists('asdb_with')) {
      * @param  callable|null  $callback
      * @return mixed
      */
-    function asdb_with($value, callable $callback = null)
+    function asdb_with($value, ?callable $callback = null)
     {
         return is_null($callback) ? $value : $callback($value);
     }
