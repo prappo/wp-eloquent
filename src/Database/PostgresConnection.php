@@ -79,7 +79,7 @@ class PostgresConnection extends Connection
      * @param  callable|null  $processFactory
      * @return \Prappo\WpEloquent\Database\Schema\PostgresSchemaState
      */
-    public function getSchemaState(Filesystem $files = null, callable $processFactory = null)
+    public function getSchemaState(?Filesystem $files = null, ?callable $processFactory = null)
     {
         return new PostgresSchemaState($this, $files, $processFactory);
     }
